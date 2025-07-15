@@ -26,6 +26,9 @@
 ## 部署方式
 
 用VS code打开frontEnd, IDEA打开backEnd, 添加完各种依赖
+
 Vue：vue-router pinia axios
+
 Java:Jackson Jwt Servlet(jakarta) MySQL
+
 修改后端的src下的resource里的config.properties里的user和password，填你自己的账号密码
