@@ -1,0 +1,63 @@
+# ========== 通用规则 ==========
+# 系统文件
+.DS_Store
+*.swp
+*.swo
+Thumbs.db
+
+# 日志文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ========== Java 后端规则 ==========
+# Maven
+target/
+!**/src/main/**/target/  # 允许主代码的target（如测试报告）
+!**/src/test/**/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+!.idea/modules.xml       # 保留必要配置
+!.idea/jarRepositories.xml
+!.idea/compiler.xml
+*.iml
+*.ipr
+*.iws
+
+# ========== Vue 前端规则 ==========
+# 依赖
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# IDE
+.vscode/
+!.vscode/extensions.json # 保留共享扩展配置
+
+# ========== 其他IDE/编辑器 ==========
+# Eclipse
+.classpath
+.project
+.settings/
+.factorypath
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/   # 允许主代码build
+!**/src/test/**/build/
+
+# ========== 特殊例外 ==========
+# 允许必要的空目录标记
+!.gitkeep
